@@ -9,11 +9,42 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  google_maps_flutter: ^2.5.0
+  location: ^5.0.3
+  provider: ^6.1.1
+  shared_preferences: ^2.2.2
+  sqflite: ^2.3.0
+  path: ^1.8.3
+  crypto: ^3.0.3
+  path_provider: ^2.1.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.4
 
 flutter:
   uses-material-design: true
+  
+  # Recursos de la aplicación
+  assets:
+    - lib/Logo_Trueno/LOGO_TRUENO.png
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "lib/Logo_Trueno/LOGO_TRUENO.png"
+  remove_alpha_ios: true
+  min_sdk_android: 21
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: "lib/Logo_Trueno/LOGO_TRUENO.png"
+  web:
+    generate: true
+    image_path: "lib/Logo_Trueno/LOGO_TRUENO.png"
+    background_color: "#FFFFFF"
+    theme_color: "#FB923C"
+  windows:
+    generate: true
+    image_path: "lib/Logo_Trueno/LOGO_TRUENO.png"
+    icon_size: 256 # Tamaño más grande para Windows
